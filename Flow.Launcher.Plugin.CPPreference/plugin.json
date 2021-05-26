@@ -1,0 +1,12 @@
+{
+  "ID": "28b1bc8d-06e1-4bda-8311-f36e8d4f9915",
+  "ActionKeyword": "cpp",
+  "Name": "CPPreference",
+  "Description": "Search cppreference.com efficiently",
+  "Author": "Peter Schussheim",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://github.com/PeterSchussheim/Flow.Launcher.Plugin.CPPreference",
+  "IcoPath": "icon.png",
+  "ExecuteFileName": "Flow.Launcher.Plugin.CPPreference.dll"
+}
