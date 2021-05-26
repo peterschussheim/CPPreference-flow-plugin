@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flow.Launcher.Plugin.CPPreference", "Flow.Launcher.Plugin.CPPreference.csproj", "{917FCC0C-AF37-41B3-AC52-7A11432CB639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flow.Launcher.Plugin.CPPreference", "Flow.Launcher.Plugin.CPPreference\Flow.Launcher.Plugin.CPPreference.csproj", "{917FCC0C-AF37-41B3-AC52-7A11432CB639}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F9C13D6-BE56-4577-AA0B-A60B264244D1}"
 	ProjectSection(SolutionItems) = preProject
