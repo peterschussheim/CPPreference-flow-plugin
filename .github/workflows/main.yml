@@ -20,18 +20,18 @@ jobs:
         id: version
         uses: notiz-dev/github-action-json-property@release
         with: 
-          path: 'Flow.Launcher.Plugin.CPPreference-flow-plugin/plugin.json'
+          path: 'Flow.Launcher.Plugin.CPPreference/plugin.json'
           prop_path: 'Version'
       - run: echo ${{steps.version.outputs.prop}} 
       - name: Build
         run: |
-          dotnet publish 'Flow.Launcher.Plugin.CPPreference-flow-plugin/Flow.Launcher.Plugin.CPPreference-flow-plugin.csproj' --framework netcoreapp3.1  -c Release -o "CPPreference-flow-plugin"
-          7z a -tzip "Flow.Launcher.Plugin.CPPreference-flow-plugin.zip" "CPPreference-flow-plugin/*"
+          dotnet publish 'Flow.Launcher.Plugin.CPPreference/Flow.Launcher.Plugin.CPPreference.csproj' --framework netcoreapp3.1  -c Release -o "CPPreference"
+          7z a -tzip "Flow.Launcher.Plugin.CPPreference.zip" "CPPreference-flow-plugin/*"
           rm -r "CPPreference-flow-plugin"
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:
-          files: "Flow.Launcher.Plugin.CPPreference-flow-plugin.zip"
+          files: "Flow.Launcher.Plugin.CPPreference.zip"
           tag_name: "v${{steps.version.outputs.prop}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
