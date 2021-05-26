@@ -9,13 +9,19 @@ A plugin for [Flow launcher](https://github.com/Flow-Launcher/Flow.Launcher) pro
 | ---------------------------------------- | ----------------------------------------- | --------------------------------- |
 | ``cpp {query}`` | Search cppreference.com for a given `query` | `cpp std::map`                  |
 
-Depending on if your query was successful and useful results were returned, users may hit the enter key to open a link to that 
-particular result in a new tab of their default browser.
+![Activate and search](./resources/activate_and_search.gif "Activate and search")
 
-### Screenshots
+If your query was successful and relevant results were returned, hit the enter key to open a link to that 
+particular result in a new tab of their default browser:
+
+![Activate, search, and open new tab](./resources/activate_search_open_tab.gif "Activate, search, and open new tab")
 
 ### TODO
 
 ### Contributing
 
+TODO
+
 ### License
+
+TODO
