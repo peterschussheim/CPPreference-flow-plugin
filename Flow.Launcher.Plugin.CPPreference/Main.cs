@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 
 // TODO: submit plugin to plugin repository https://github.com/Flow-Launcher/Flow.Launcher.PluginsManifest
-// TODO: add license file
 // TODO: fix broken github action
 // TODO: extract code from Main.cs which can be seperated
 // TODO: query_url should be split into multiple parts so that the base URL can be reused across the code
