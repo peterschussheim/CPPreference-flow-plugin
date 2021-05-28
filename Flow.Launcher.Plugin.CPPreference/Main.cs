@@ -4,10 +4,8 @@ using System;
 using System.Collections.Generic;
 
 
-// TODO: fix broken github action
 // TODO: submit plugin to plugin repository https://github.com/Flow-Launcher/Flow.Launcher.PluginsManifest
 // TODO: extract code from Main.cs which can be seperated
-// TODO: query_url should be split into multiple parts so that the base URL can be reused across the code
 
 
 namespace Flow.Launcher.Plugin.CPPreference
@@ -16,13 +14,20 @@ namespace Flow.Launcher.Plugin.CPPreference
     {
         private PluginInitContext _context;
 
-        private readonly string query_url = "https://en.cppreference.com/mwiki/index.php?search=";
+        private readonly string base_url = "https://en.cppreference.com";
+        private string query_url;
+
         private readonly string icon_path = "icon.png";
+
+        /// <summary>
+        /// cppreference.com supports C and C++. Currently, this plugin only supports C++.
+        /// </summary>
         private readonly bool _cpp = true;
 
         //------------------------------------------------------------------------------
         public void Init(PluginInitContext context)
         {
+            query_url = base_url + "/mwiki/index.php?search=";
             _context = context;
         }
 
@@ -60,7 +65,7 @@ namespace Flow.Launcher.Plugin.CPPreference
 
                 var result = new Result
                 {
-                    Title = "search in cppreference.com",
+                    Title = "Search cppreference.com",
                     SubTitle = url,
                     IcoPath = icon_path,
                     Action = e =>
@@ -119,7 +124,7 @@ namespace Flow.Launcher.Plugin.CPPreference
 
                     foreach (HtmlNode node in nodes)
                     {
-                        string query_url = "https://en.cppreference.com" + node.Attributes["href"].Value;
+                        string query_url = base_url + node.Attributes["href"].Value;
                         var result = new Result
                         {
                             Title = node.InnerText.Replace("&lt;", "<").Replace("&gt;", ">"),

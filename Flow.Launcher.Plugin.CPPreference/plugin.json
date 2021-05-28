@@ -4,9 +4,9 @@
   "Name": "CPPreference",
   "Description": "Search cppreference.com efficiently",
   "Author": "Peter Schussheim",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Language": "csharp",
-  "Website": "https://github.com/PeterSchussheim/Flow.Launcher.Plugin.CPPreference",
+  "Website": "https://github.com/peterschussheim/CPPreference-flow-plugin",
   "IcoPath": "icon.png",
   "ExecuteFileName": "Flow.Launcher.Plugin.CPPreference.dll"
 }
