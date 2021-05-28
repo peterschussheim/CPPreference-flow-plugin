@@ -26,8 +26,8 @@ jobs:
       - name: Build
         run: |
           dotnet publish 'Flow.Launcher.Plugin.CPPreference/Flow.Launcher.Plugin.CPPreference.csproj' --framework netcoreapp3.1  -c Release -o "CPPreference"
-          7z a -tzip "Flow.Launcher.Plugin.CPPreference.zip" "CPPreference-flow-plugin/*"
-          rm -r "CPPreference-flow-plugin"
+          7z a -tzip "Flow.Launcher.Plugin.CPPreference.zip" "CPPreference/*"
+          rm -r "CPPreference"
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:

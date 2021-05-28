@@ -24,4 +24,4 @@ TODO
 
 ### License
 
-TODO
+[AGPL 3.0](./LICENSE)
