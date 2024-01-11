@@ -3,7 +3,7 @@
   "ActionKeyword": "cpp",
   "Name": "CPPreference",
   "Description": "Search cppreference.com efficiently",
-  "Author": "Peter Schussheim",
+  "Author": "Peter Schussheim, Jonas de Bruin",
   "Version": "1.0.1",
   "Language": "csharp",
   "Website": "https://github.com/peterschussheim/CPPreference-flow-plugin",
