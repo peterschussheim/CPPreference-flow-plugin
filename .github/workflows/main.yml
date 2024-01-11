@@ -11,11 +11,11 @@ jobs:
   publish:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.1
       - name: Setup .NET
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 3.1.301
+          dotnet-version: 3.1.x
       - name: get version
         id: version
         uses: notiz-dev/github-action-json-property@release
