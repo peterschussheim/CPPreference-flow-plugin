@@ -25,7 +25,7 @@ jobs:
       - run: echo ${{steps.version.outputs.prop}} 
       - name: Build
         run: |
-          dotnet publish 'Flow.Launcher.Plugin.CPPreference/Flow.Launcher.Plugin.CPPreference.csproj' --framework netcoreapp3.1  -c Release -o "CPPreference"
+          dotnet publish 'Flow.Launcher.Plugin.CPPreference/Flow.Launcher.Plugin.CPPreference.csproj' --framework net8.0  -c Release -o "CPPreference"
           7z a -tzip "Flow.Launcher.Plugin.CPPreference.zip" "CPPreference/*"
           rm -r "CPPreference"
       - name: Publish
