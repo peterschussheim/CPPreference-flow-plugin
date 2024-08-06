@@ -70,7 +70,7 @@ namespace Flow.Launcher.Plugin.CPPreference
                     IcoPath = icon_path,
                     Action = e =>
                     {
-                        url.OpenInBrowserTab();
+                        _context.API.OpenUrl(url);
                         return true;
                     }
                 };
@@ -92,7 +92,7 @@ namespace Flow.Launcher.Plugin.CPPreference
                         IcoPath = icon_path,
                         Action = e =>
                         {
-                            url.OpenInBrowserTab();
+                            _context.API.OpenUrl(url);
                             return true;
                         }
                     };
@@ -134,7 +134,7 @@ namespace Flow.Launcher.Plugin.CPPreference
                             {
                                 try
                                 {
-                                    query_url.OpenInBrowserTab();
+                                    _context.API.OpenUrl(query_url);
                                     return true;
                                 }
                                 catch (Exception)
